@@ -1,0 +1,11 @@
+<h1>Learn How to Program</h1>
+
+<% if @courses.any? %>
+  <ul>
+    <%= @courses.each do |course| %>
+      <li><%= course.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <h4>There are no courses available yet</h4>
+<% end %>
