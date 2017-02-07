@@ -1,0 +1,37 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #FCFCFC;
+}
+
+.header {
+  margin-bottom: 30px;
+  color:#444;
+  margin-left: 30px;
+}
+.courses {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.courses a  {
+  color:#D9230F;
+}
+
+.courses a:hover {
+  color:brown;
+}
+
+.button-add {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.navbar {
+  height:15px;
+  background-color: white;
+}

@@ -1,12 +1,12 @@
-<h1>Learn How to Program</h1>
+<h1 class="header">Courses</h1>
 
 <% if @courses.any? %>
-  <ul>
+
     <% @courses.each do |course| %>
-      <li><%= link_to course.name, course_path(course) %></li>
+      <h4 class="courses"><%= link_to course.name, course_path(course) %></h4>
       <% end %>
-  </ul>
+
 <% else %>
   <h4>There are no courses available yet</h4>
 <% end %>
-<h4 class="button"><%= link_to "Add Course", new_course_path %></h4>
+<h4 class="button-add"><%= link_to "Add Course", new_course_path %></h4>
