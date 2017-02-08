@@ -1,3 +1,6 @@
+<% content_for(:previous, (link_to "Previous", week_lesson_path()))%>
+<% content_for(:next, (link_to "Next", week_lesson_path()))%>
+
 <h2> <%= @lesson.name %> </h2>
 
 <%= link_to "Edit Lesson", edit_week_lesson_path(@lesson.week, @lesson) %>

@@ -5,6 +5,11 @@ class LessonsController < ApplicationController
     render :show
   end
 
+  def show_previous
+    @lesson = Lesson.finder(params[:id - 1])
+    render :show
+  end
+
   def new
     @week = Week.find(params[:week_id])
     @lesson = @week.lessons.new
