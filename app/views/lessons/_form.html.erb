@@ -1,10 +1,8 @@
 <%= render "layouts/errors", :object => @lesson %>
 
-<%= form_for [@course, @lesson] do |f| %>
+<%= form_for [@week, @lesson] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name%>
-  <%= f.label :week%>
-  <%= f.text_field :week%>
   <%= f.label :day%>
   <%= f.text_field :day%>
   <%= f.submit %>

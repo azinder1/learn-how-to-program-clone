@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @week %>
+
+<%= form_for [@course, @week] do |f| %>
+  <%= f.label :objective %>
+  <%= f.text_field :objective%>
+  <%= f.label :week_number%>
+  <%= f.text_field :week_number%>
+  <%= f.submit %>
+<% end %>

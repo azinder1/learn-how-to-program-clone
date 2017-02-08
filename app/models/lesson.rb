@@ -1,6 +1,5 @@
 class Lesson < ActiveRecord::Base
-  belongs_to :course
+  belongs_to :week
   validates :name, :presence => true
-  validates :week, :presence => true
   validates :day, :presence => true
 end

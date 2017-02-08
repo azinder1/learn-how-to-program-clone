@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170207165505) do
+ActiveRecord::Schema.define(version: 20170207225108) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,13 @@ ActiveRecord::Schema.define(version: 20170207165505) do
 
   create_table "lessons", force: :cascade do |t|
     t.string  "name"
-    t.string  "week"
     t.string  "day"
+    t.integer "week_id"
+  end
+
+  create_table "weeks", force: :cascade do |t|
+    t.string  "objective"
+    t.string  "week_number"
     t.integer "course_id"
   end
 
